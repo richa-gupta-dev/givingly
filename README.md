@@ -1,0 +1,2 @@
+# givingly
+A crowdfunding application
