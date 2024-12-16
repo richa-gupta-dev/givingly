@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's start with Givingly</title>
+    <link rel="stylesheet" href="startsupportstyle.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+            <img src="heart_hand.png" alt="Giving logo">
+            <a href="index.html">Givingly</a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="#news">Latest News</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#login"><button class="login">Log in</button></a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+            <span>&#9776;</span>    <!-- Hamburger icon -->
+          </div>
+        </nav>
+      </header>
+
+      <div class="container">
+        <div class="left-section">
+          <h3>I want to:</h3>
+          <div class="option">
+            <input type="checkbox" id="support" name="choice">
+            <label for="support"> <h1>Support</h1> <h2>other projects</h2> </label>
+          </div>
+          <hr>
+          <div class="option">
+            <input type="checkbox" id="kickoff" name="choice">
+            <label for="kickoff"> <h1>Kick-off</h1> <h2>my project</h2> </label>
+          </div>
+          <a href="signup.html">
+            <button id="proceedButton" disabled>Proceed</button>
+          </a>
+        </div>
+      
+        <div class="right-section">
+          <div class="card">
+            <img src="newsletter.png" alt="Newsletter Icon"> </br>
+            <h2>Stay informed</h2> </br>
+            <p>Want to be among the first people to know about amazing projects on our platform? Join our monthly digest of the best courses.</p> </br>
+            <button>Join newsletter</button>
+          </div>
+        </div>
+      </div>
+    
+      <script src="startsupportfunc.js"></script>
+</body>
+</html>

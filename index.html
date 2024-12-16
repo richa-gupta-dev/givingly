@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Givingly</title>
+  <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="heart_hand.png" alt="Giving logo">
+        <a href="#data">Givingly</a>
+      </div>
+      <!-- Search bar -->
+      <div class="search-container">
+        <input type="text" placeholder="Search for projects..." class="search-input">
+        <span class="search-icon">&#128269;</span> <!-- Unicode for search icon -->
+      </div>
+      <ul class="nav-links">
+        <li><a href="#data">Why Givingly?</a></li>
+        <li><a href="#news">Latest News</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#login"><button class="login">Log in</button></a></li>
+        <li><a href="startsupport.html"><button class="signup">Sign up</button></a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span>&#9776;</span>    <!-- Hamburger icon -->
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="content">
+        <h1>Givingly</h1>
+        <h2>Supporting great causes made easy</h2>
+        <p>
+            We helped over 3,500 projects and causes. Sign in today and get your idea kicked off or support others kick off their amazing projects.
+        </p>
+        <div class="buttons">
+          <a href="startsupport.html"> <button>Start today</button> </a>
+          <a href="#how-it-works"> <button>See how it works</button> </a>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="giving.png" alt="Heart and Hand Graphic">  </br>
+        <!-- <img src="heart_hand.png" alt="Heart and Hand Graphic"> -->
+    </div>
+  </section>
+
+  <section class="data" id="data">
+    <div>
+      <h2>200M+</h2>
+      <h3>Humans Impacted</h3>
+    </div>
+    <div>
+      <h2>50K+</h2>
+      <h3>Collaborators</h3>
+    </div>
+    <div>
+      <h2>370K+</h2>
+      <h3>Donations</h3>
+    </div>
+    <div class="data4">
+      <h2>0% <span class="uplift">*</span></h2>
+      <h3>Platform Fee</h3>
+    </div>
+  </section>
+
+  <section>
+    <div class="categories">
+      <div class="line"></div>
+      <div class="head-and-arrow">
+        <h1>Categories</h1>
+        <span class="down-arrow">&#9660;</span> <!-- &#x25BE Correct way -->
+      </div>
+      <div class="line"></div>
+      <div class="category-buttons">
+        <div>
+          <button class="category active" data-category="all">
+            <span class="emoji">🌍</span>
+          </button> </br>
+          <p class="label">All</p>
+        </div>
+        <div>
+          <button class="category" data-category="disease">
+            <span class="emoji">🤢</span>
+          </button> </br>
+          <p class="label">Disease</p>
+        </div>
+        <div>
+          <button class="category" data-category="rehabilitation">
+            <span class="emoji">♿️</span>
+          </button> </br>
+          <p class="label">Rehabiitation</p>
+        </div>
+        <div>
+          <button class="category" data-category="animals">
+            <span class="emoji">🐾</span>
+          </button> </br>
+          <p class="label">Animals</p>
+        </div>
+        <div>
+          <button class="category" data-category="environment">
+            <span class="emoji">🌱</span>
+          </button> </br>
+          <p class="label">Environment</p> 
+        </div>
+        <div>
+          <button class="category" data-category="education">
+            <span class="emoji">🎓</span>
+          </button> </br>
+          <p class="label">Education</p>
+        </div>
+        <div>
+          <button class="category" data-category="culture">
+            <span class="emoji">🎭</span>
+          </button> </br>
+          <p class="label">Culture</p>
+        </div>
+        <div>
+          <button class="category" data-category="children">
+            <span class="emoji">👶</span>
+          </button> </br>
+          <p class="label">Children</p>
+        </div>
+        <div>
+          <button class="category" data-category="elderly">
+            <span class="emoji">🧓</span>
+          </button> </br>
+          <p class="label">Elderly</p>
+        </div>
+        <div>
+          <button class="category" data-category="mental-health">
+            <span class="emoji">🧘‍♂️</span>
+          </button> </br>
+          <p class="label">Mental Health</p>
+        </div>
+        <div>
+          <button class="category" data-category="sustainable-production">
+            <span class="emoji">♻️</span>
+          </button> </br>
+          <p class="label">Sustainable Production</p>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <section id="project-of-week">
+    <div class="line"></div>
+    <div class="head-and-arrow">
+      <h2>Project of the week</h2>
+      <span class="down-arrow">&#9660;</span> <!-- &#x25BE Correct way -->
+    </div>
+    <div class="line"></div>
+    <div class="project-and-payment">
+      <div class="project">
+        <img src="project1.png" alt="Image of the project of the week"> </br>
+        <h2>Build a cat shelter with us!</h2>
+        <div>
+          <p>By <span>Alley Cat Allies</span> </p>
+          <button id="share-button">Share</button>
+
+          <div id="sharePopup" class="popup" style="display: none;">
+            <div class="popup-content">
+              <div class="popup-header">
+                <h3>Share</h3> 
+                <button class="close-btn">&times;</button>
+              </div>
+              <div class="popup-body">
+                <div>
+                  <a href="https://www.instagram.com/share?url=http%3A%2F%2Fhttp%3A%2F%2Flini.com%2Fsht126" target="_blank">
+                    <img src="instagram.png" alt="Instagram"> 
+                  </a>
+                  <p>Instagram</p>
+                </div>
+                <div>
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhttp%3A%2F%2Flini.com%2Fsht126" target="_blank">
+                    <img src="facebook.png" alt="Facebook"> 
+                  </a>
+                  <p>Facebook</p>
+                </div>
+                <div>
+                  <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20&url=http%3A%2F%2Fhttp%3A%2F%2Flini.com%2Fsht126" target="_blank">
+                    <img src="twitter.png" alt="Twitter"> 
+                  </a>
+                  <p>Twitter</p>
+                </div>
+              </div>
+              <div class="link-container">
+                <input type="text" value="http://alleycatallies.com/cathouse" readonly> <p>&nbsp;&nbsp;&nbsp;</p>
+                <button>Copy</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- target="_blank" -->
+        <!-- https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhttp%3A%2F%2Flini.com%2Fsht126 -->
+        <!-- https://twitter.com/intent/tweet?text=Check%20out%20this%20&url=http%3A%2F%2Fhttp%3A%2F%2Flini.com%2Fsht126 -->
+        <!-- https://www.instagram.com/share?url=http%3A%2F%2Fhttp%3A%2F%2Flini.com%2Fsht126 -->
+        <!-- Progress Bar Container -->
+        <div class="progress-container">
+          <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <div> <p>Raised:</p> <p>Goal:</p> </div>
+        <div class="bar-amount"> <p>Rs. 25,000</p> <p>Rs. 35,000</p> </div>
+        <div class="env-stat"> 
+          <button>Environmental Clearances</button>
+          <button>Statistics</button>
+        </div>
+        <div class="line"></div>
+        <div class="head-and-arrow">
+          <h3>Donation Amount</h3>
+          <span class="down-arrow">&#9660;</span> <!-- &#x25BE Correct way -->
+        </div>
+        <div class="line"></div>
+        <div class="amounts">
+          <button class="category">Rs. 100</button>
+          <button class="category">Rs. 200</button>
+          <button class="category active">Rs. 500</button>
+          <button class="category">Rs. 700</button>
+          <button class="category">Rs. 1000</button>
+          <input type="number" min="10" class="category" placeholder="Rs. ">
+        </div>
+        <div class="item">
+          <input type="checkbox" id="processCharge" value="true" checked>
+          <label for="processCharge">Make my gift go further- I'll cover the additional processing fees. <span>More</span></label>
+        </div>
+        <hr>
+        <div class="item">
+          <input type="checkbox" id="monthly" value="true">
+          <label>Make my donation monthy</label>
+        </div>
+      </div>
+
+      <div class="payment">
+        <div class="options">
+          <button id="pay-with-card">Pay with Card</button>
+          <hr class="vertical-line">
+          <p>UPI ID: </br> <span>alleycatallies@oksbi</span> </p>
+          <hr class="vertical-line">
+          <img src="qr-code.png" alt="QR code for donating to the project">
+        </div>
+        
+        <fieldset id="card-details" disabled>
+            <legend>Card Details</legend> </br>
+          <label for="card-number"> Credit/Debit Card Number: </label> 
+            <input type="text" id="card-number" pattern="\d{16,19}" required="required" placeholder="Enter 16 to 19 digits">
+            </br> </br>
+          <label for="username">Enter the name on the card: </label>
+            <input type="text" id="username" required="required" placeholder="Enter the name on the card">
+           </br> </br>
+          <label for="expiry-date">Enter Expiry Month: </label> 
+            <input type="month" id="expiry-date" required placeholder="MM/YYYY">
+           </br> </br>
+          <label for="cvv">Enter CVV: </label>
+            <input type="password" id="cvv" minlength="4" maxlength="4" required placeholder="****">
+          </br> </br>
+          <div class="class-buttons">
+            <button type="submit" id="get-data-btn">Proceed</button>
+            <button type="submit" id="resetButton">Reset</button>
+          </div>          
+        </fieldset>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="how-it-works">
+    <div class="support-project">
+    <div class="line"></div>
+<div class="head-and-arrow">
+    <h2>How to support projects</h2>
+    <span class="down-arrow">&#9660;</span> <!-- &#x25BE Correct way -->
+</div>
+    <div class="line"></div>
+    <div class="steps-container">
+        <div class="step">
+            <img src="supporter1.png" alt="Step 1 Icon">
+            <h3>Step 1. Sign Up</h3>
+            <p>to join the community</p>
+        </div>
+        <div class="step">
+            <img src="supporter2.png" alt="Step 2 Icon">
+            <h3>Step 2. Donate</h3>
+            <p>one-time or monthly via UPI / GooglePay / Paytm / PhonePe</p>
+        </div>
+        <div class="step">
+            <img src="supporter3.png" alt="Step 3 Icon">
+            <h3>Step 3. Claim Tax Exemption</h3>
+            <p>upto 100% under section 80G of Income Tax Act</p>
+        </div>
+      </div>
+    <div class="line"></div>
+  </div>
+
+  <div class="start-project">
+    <!-- <div class="line"></div> -->
+  <div class="head-and-arrow">
+    <h2>How to get your project started</h2>
+    <span class="down-arrow">&#9660;</span> <!-- Correct way -->
+  </div>
+    <div class="line"></div>
+    <div class="steps-container">
+        <div class="step">
+            <img src="supporter1.png" alt="Step 1 Icon">
+            <h3>Step 1. Start a FREE Fundraiser</h3>
+            <p>by filling all relevant details</p>
+        </div>
+        <div class="step">
+            <img src="supporter3.png" alt="Step 2 Icon">
+            <h3>Step 2. Share your Fundraiser</h3>
+            <p>with friends, family and strangers to raise funds quickly</p>
+        </div>
+        <div class="step">
+            <img src="supporter2.png" alt="Step 3 Icon">
+            <h3>Step 3. Withdraw ALL Donations</h3>
+            <p>at any point in your fundraising journey</p>
+        </div>
+    </div>
+    <div class="line"></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="company-logo">
+    <h1>Givingly</h1>
+    <img src="heart_hand.png" alt="Giving logo">
+  </div>
+  <div class="contact-details">
+    <div>
+      <p class="bold">Social</p>
+      <div class="meet-up">
+        <!-- <span>&#xf09a;</span> --> 
+        <img src="facebook.png">  <p>&nbsp;</p>  <a href="#facebook">Facebook</a> 
+      </div>
+      <div class="meet-up">
+        <!-- <span>&#xf16d;</span> --> 
+        <img src="instagram.png">   <p>&nbsp;</p>   <a href="#instagram">Instagram</a>
+      </div>
+      <div class="meet-up">
+        <!-- <span>&#xf08c;</span> --> 
+        <img src="twitter.png"> <p>&nbsp;</p> <a href="#twitter">Twitter</a>
+      </div>
+    </div>
+    <div>
+      <a href="#get-help">Get Help</a> </br>
+      <a href="#partner-with-us">Partner with us</a> </br>
+      <a href="#signup-newsletter">Sign up for newsletter</a> </br>
+      <a href="#blog">Read our blog</a>
+    </div>
+    <div>
+      <p class="bold">Meet Us</p>
+      <div class="meet-up">
+        <span>&#9742;</span>  <p>&nbsp;</p>  <p>+919999666555</p> 
+      </div>
+      <div class="meet-up">
+        <span>&#9993;</span>   <p>&nbsp;</p>   <p>contact@givingly.in</p>
+      </div>
+      <div class="meet-up">
+        <span class="address">📍</span>  <p>&nbsp;</p>  <p>Myra Rao, 456 Elm Street, Suite 3, Dadar East, Mumbai 400019, India</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Example content sections 
+  <section id="home">
+    <h1>Home Section</h1> 
+  </section>
+  <section id="news">
+    <h1>Latest News Section</h1>
+  </section>
+  <section id="about">
+    <h1>About Us Section</h1>
+  </section>
+  <section id="contact">
+    <h1>Contact Us Section</h1>
+  </section>
+  -->
+
+  <script src="app.js"></script>
+</body>
+</html>
